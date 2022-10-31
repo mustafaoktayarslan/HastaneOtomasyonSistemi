@@ -18,15 +18,15 @@ public class DBConnection {/*
 	Connection c=null;
 	int rows;
 	String sql="SELECT * FROM [user]";
-	String url="jdbc:sqlserver://localhost:52390;databaseName=HastaneOtomasyonDB;user=sa;password=123qwe;encrypt=true;trustServerCertificate=true;";
-	String username="sa";
-	String password="123qwe";
+	String url="jdbc:sqlserver://localhost:52390;databaseName=HastaneOtomasyonDB;user= DATABASE KULLANICI ADI ;password= DATABASE ŞİFRE ;encrypt=true;trustServerCertificate=true;";
+	String username="BURAYA DATABASE KULLANICI ADINI GİRİN";
+	String password="DATABESE ŞİFRENİZİ GİRİN";
 	public DBConnection() {}
 	public Connection connDB() {
 		
 		try {
 			this.c=DriverManager.getConnection(url);
-			System.out.println("veri taban�na girildi");
+			System.out.println("veri taban�na girildi");
 		
 			
 		
@@ -34,7 +34,7 @@ public class DBConnection {/*
 			return c;
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			System.out.println("VER� TABANI BA�LANTISI YAPILAMADI");
+			System.out.println("VER� TABANI BA�LANTISI YAPILAMADI");
 			e.printStackTrace();
 		}
 		return c;
